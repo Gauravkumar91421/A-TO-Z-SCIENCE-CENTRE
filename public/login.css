@@ -1,0 +1,416 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background-color: #555;
+}
+
+.container{
+    position:relative;
+    width:900px;
+    max-width:100%;
+    min-height:600px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.form-container{
+    position:absolute;
+    top:0;
+    height:100%;
+    width:50%;
+    transition:.6s ease-in-out;
+}
+
+.sign-in-container{
+    left:0;
+    z-index:2;
+}
+
+.sign-up-container{
+    left:0;
+    opacity:0;
+    z-index:1;
+}
+
+form{
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    padding:0 50px;
+    text-align:center;
+}
+
+h1{
+    font-size:32px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:10px;
+}
+
+span{
+    font-size:14px;
+    color:#666;
+    margin:15px 0;
+}
+
+input{
+    width:100%;
+    background:#f3f3f3;
+    border:none;
+    outline:none;
+    padding:14px 18px;
+    margin:8px 0;
+    border-radius:10px;
+    font-size:15px;
+    transition:.3s;
+}
+
+input:focus{
+    background:#fff;
+    border:2px solid #ff4b2b;
+}
+
+button{
+    margin-top:20px;
+    padding:13px 50px;
+    border:none;
+    border-radius:30px;
+    background:#ff4b2b;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#ff2e00;
+    transform:scale(1.05);
+}
+
+button.ghost{
+    background:transparent;
+    border:2px solid #fff;
+}
+
+a{
+    color:#555;
+    text-decoration:none;
+    margin:15px 0;
+    font-size:14px;
+}
+
+.social-container{
+    margin:20px 0;
+}
+
+.social-container a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:42px;
+    height:42px;
+    border:1px solid #ddd;
+    border-radius:50%;
+    margin:0 5px;
+    color:#333;
+    transition:.3s;
+}
+
+.social-container a:hover{
+    background:#ff4b2b;
+    color:#fff;
+    border-color:#ff4b2b;
+}
+
+/* ========================= */
+/* PART 2B - Overlay Animation */
+/* ========================= */
+
+.overlay-container{
+    position:absolute;
+    top:0;
+    left:50%;
+    width:50%;
+    height:100%;
+    overflow:hidden;
+    transition:transform .6s ease-in-out;
+    z-index:100;
+}
+
+.overlay{
+    position:relative;
+    left:-100%;
+    width:200%;
+    height:100%;
+    background:linear-gradient(135deg,#ff4b2b,#ff416c);
+    color:#fff;
+    transform:translateX(0);
+    transition:transform .6s ease-in-out;
+}
+
+.overlay-panel{
+    position:absolute;
+    top:0;
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 40px;
+}
+
+.overlay-panel h1{
+    color:#fff;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.overlay-panel p{
+    font-size:16px;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.overlay-left{
+    transform:translateX(-20%);
+}
+
+.overlay-right{
+    right:0;
+    transform:translateX(0);
+}
+
+/* Active Animation */
+
+.container.active .sign-in-container{
+    transform:translateX(100%);
+}
+
+.container.active .sign-up-container{
+    transform:translateX(100%);
+    opacity:1;
+    z-index:5;
+}
+
+.container.active .overlay-container{
+    transform:translateX(-100%);
+}
+
+.container.active .overlay{
+    transform:translateX(50%);
+}
+
+.container.active .overlay-left{
+    transform:translateX(0);
+}
+
+.container.active .overlay-right{
+    transform:translateX(20%);
+}
+
+/* Smooth Fade */
+
+.sign-in-container,
+.sign-up-container,
+.overlay,
+.overlay-container{
+    transition:all .6s ease-in-out;
+}
+
+/* ========================= */
+/* ========================= */
+/* PART 2C - Responsive Design */
+/* ========================= */
+
+/* ========= MOBILE VIEW ========= */
+
+/* Mobile Vertical Layout */
+
+@media (max-width:768px){
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    border-radius:0;
+}
+
+/* Overlay sabse upar */
+.overlay-container{
+    order:1;
+    position:relative;
+    width:100%;
+    height:220px;
+    left:0;
+    top:0;
+    transform:none !important;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    left:0;
+    transform:none !important;
+}
+
+/* Login niche */
+.sign-in-container{
+    order:2;
+    position:relative;
+    width:100%;
+    height:auto;
+    left:0;
+    transform:none !important;
+}
+
+/* Signup hidden */
+.sign-up-container{
+    display:none;
+}
+
+/* SignUp mode */
+.container.active .overlay-right{
+    display:none;
+}
+
+.container.active .overlay-left{
+    display:flex;
+}
+
+.container.active .sign-in-container{
+    display:none;
+}
+
+.container.active .sign-up-container{
+    order:2;
+    display:block;
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+/* Forms */
+form{
+    width:100%;
+    padding:25px;
+}
+
+input,
+button{
+    width:100%;
+}
+}@media (max-width:768px){
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    border-radius:0;
+}
+
+.form-container,
+.sign-in-container,
+.sign-up-container{
+    position:relative;
+    width:100%;
+    height:auto;
+    left:0;
+    top:0;
+    transform:none !important;
+    opacity:1;
+}
+
+.overlay-container{
+    position:relative;
+    width:100%;
+    height:240px;
+    left:0;
+    top:0;
+    transform:none;
+    z-index:5;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    left:0;
+    transform:none !important;
+}
+
+.overlay-panel{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+.overlay-left{
+    display:none;
+}
+
+
+
+.container.active .overlay-left{
+    display:flex;
+}
+
+.container.active .overlay-right{
+    display:none;
+}
+
+.sign-up-container{
+    display:none;
+}
+
+.container.active .sign-up-container{
+    display:block;
+}
+
+.container.right-panel-active .sign-in-container{
+    display:none;
+}
+
+form{
+    width:90%;
+    padding:30px 20px;
+}
+
+input{
+    width:100%;
+}
+
+button{
+    width:100%;
+}
+
+}

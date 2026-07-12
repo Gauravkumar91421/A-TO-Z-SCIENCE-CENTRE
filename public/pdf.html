@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PDF Reader</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+<style>
+body{
+    margin:0;
+    background:#f2f2f2;
+    text-align:center;
+}
+canvas{
+    margin-top:20px;
+    border:1px solid #ccc;
+    max-width:100%;
+}
+button{
+    padding:10px 20px;
+    margin:10px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<h2>PDF Reader</h2>
+
+<canvas id="pdf-render"></canvas>
+
+<script>
+
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+let pdfDoc=null;
+let pageNum=1;
+
+const canvas=document.getElementById("pdf-render");
+const ctx=canvas.getContext("2d");
+
+const params = new URLSearchParams(window.location.search);
+const pdfFile = params.get("file");
+
+pdfjsLib.getDocument(pdfFile).promise.then(pdf => {
+
+    pdfDoc = pdf;
+    renderPage(pageNum);
+
+});
+
+
+function renderPage(num){
+
+pdfDoc.getPage(num).then(page=>{
+
+const viewport=page.getViewport({scale:1.5});
+
+canvas.height=viewport.height;
+canvas.width=viewport.width;
+
+page.render({
+canvasContext:ctx,
+viewport:viewport
+});
+
+document.getElementById("page-num").innerHTML=
+"Page "+num+" / "+pdfDoc.numPages;
+
+});
+
+}
+
+function nextPage(){
+
+if(pageNum>=pdfDoc.numPages)return;
+
+pageNum++;
+
+renderPage(pageNum);
+
+}
+
+function prevPage(){
+
+if(pageNum<=1)return;
+
+pageNum--;
+
+renderPage(pageNum);
+
+}
+
+</script>
+<div class="buttons">
+
+<button onclick="prevPage()">⬅ Previous</button>
+
+<span id="page-num"></span>
+
+<button onclick="nextPage()">Next ➡</button>
+
+<br>
+</div>
+
+</body>
+</html>

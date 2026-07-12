@@ -1,0 +1,1350 @@
+
+a{
+    text-decoration: none;
+}
+/**notes**/
+.notes-hero{
+    height:250px;
+    background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+    color:white;
+    text-align:center;
+    padding-top:70px;
+}
+
+.notes-hero h1{
+    font-size:50px;
+}
+
+.notes-hero input{
+    width:500px;
+    height:45px;
+    margin-top:20px;
+    border:none;
+    border-radius:30px;
+    padding-left:20px;
+    font-size:18px;
+}
+
+.categories{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.cat-box{
+    width:220px;
+    background:white;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 0 10px gray;
+    border-radius:15px;
+}
+
+.notes-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin-top:50px;
+}
+
+.note-card{
+    width:280px;
+    background:white;
+    box-shadow:0 0 10px gray;
+    margin:20px;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.note-card img{
+    width:100%;
+    height:180px;
+}
+
+.note-card h2{
+    padding:10px;
+}
+
+.note-card p{
+    padding:10px;
+}
+
+.note-card button{
+    margin:15px;
+    background:#ff9900;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+.latest{
+    background:#232f3e;
+    color:white;
+    padding:50px;
+    margin-top:40px;
+}
+
+.upload-box{
+    background:#37475a;
+    padding:20px;
+    margin-top:15px;
+    border-radius:10px;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-evenly;
+    padding:60px;
+    background:#e3e6e6;
+    text-align:center;
+}
+
+.stats h1{
+    color:#ff9900;
+    font-size:45px;
+}
+
+/** front page**/
+
+/* ================= HERO SECTION ================= */
+/* Hamburger Button */
+.menu-btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    font-size:32px;
+    color:#fff;
+    background:#ff9800;
+    width:50px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    border-radius:10px;
+    cursor:pointer;
+    z-index:1001;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+/* Side Menu */
+.side-menu{
+    position:fixed;
+    top:0;
+    right:-260px;
+    width:250px;
+    height:100%;
+    background:#222;
+    transition:.3s;
+    padding-top:80px;
+    z-index:1000;
+}
+
+.side-menu a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    font-size:18px;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.side-menu a:hover{
+    background:#ff9800;
+}
+
+
+.hero{
+    height:90vh;
+    background-image:url("banner1.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-text{
+    width:60%;
+    background:rgba(0,0,0,0.6);
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+}
+
+.hero-text h1{
+    font-size:35px;
+    letter-spacing:3px;
+    color:#ff9900;
+}
+
+.hero-text h2{
+    font-size:65px;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:22px;
+    line-height:35px;
+}
+
+.hero-btn{
+    margin-top:35px;
+}
+
+.btn-start{
+    background:#ff9900;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    margin-right:20px;
+    transition:0.3s;
+}
+
+.btn-start:hover{
+    background:#e67e00;
+    transform:scale(1.05);
+}
+
+.btn-video{
+    background:white;
+    color:black;
+    border:none;
+    padding:15px 40px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn-video:hover{
+    background:#dddddd;
+    transform:scale(1.05);
+}
+
+/* ================= HEADINGS ================= */
+
+.heading{
+    text-align:center;
+    font-size:45px;
+    margin-top:60px;
+    margin-bottom:40px;
+    color:black;
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+    background-color:rgb(117, 108, 108);;
+    padding:30px 60px;
+}
+
+.feature-container{
+    padding-right: 100px;
+       display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    }
+
+.feature-box{
+    width:250px;
+    background:white;
+    text-align:center;
+    border-radius:15px;
+    padding:25px;
+    margin:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-12px);
+}
+
+.feature-box img{
+    width:90px;
+    height:90px;
+}
+
+.feature-box h2{
+    margin-top:20px;
+    color:#232f3e;
+}
+
+.feature-box p{
+    margin-top:15px;
+    color:gray;
+    line-height:28px;
+}
+
+/* ================= POPULAR COURSES ================= */
+
+.popular{
+    background:#e3e6e6;
+    padding:60px 40px;
+}
+
+.course-container{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+
+.course-card{
+    width:280px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    margin:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.course-card:hover{
+    transform:translateY(-10px);
+}
+
+.course-card img:hover{
+    opacity: 0.5;
+}
+.course-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.course-card h2{
+    padding:15px;
+    color:#232f3e;
+}
+
+.course-card p{
+    padding:0 15px;
+    line-height:28px;
+    color:gray;
+}
+
+.course-card button{
+    margin:20px 15px;
+    background:#ff9900;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.course-card button:hover{
+    background:#e67e00;
+}
+
+/* ================= ACHIEVEMENTS ================= */
+
+.achievement{
+    background:#232f3e;
+    color:white;
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    padding:70px 20px;
+}
+
+.counter{
+    text-align:center;
+    margin:20px;
+}
+
+.counter h1{
+    font-size:60px;
+    color:#ff9900;
+}
+
+.counter p{
+    font-size:22px;
+    margin-top:10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.hero{
+    height:auto;
+    padding:60px 20px;
+}
+
+.hero-text{
+    width:95%;
+}
+
+.hero-text h2{
+    font-size:38px;
+}
+
+.hero-text p{
+    font-size:18px;
+}
+
+.hero-btn{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.btn-start,
+.btn-video{
+    width:90%;
+    margin:10px 0;
+}
+
+.feature-box,
+.course-card{
+    width:90%;
+}
+
+.counter h1{
+    font-size:40px;
+}
+
+.heading{
+    font-size:35px;
+}
+
+}
+
+/**11**/
+/* ================= HERO SECTION ================= */
+
+.course-hero{
+    height: 500px;
+    background-image: url("banner11.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay{
+    background:  #232f3e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay h1{
+    font-size: 65px;
+    color: #ff9900;
+    letter-spacing: 3px;
+}
+
+.overlay p{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.overlay button{
+    margin-top: 35px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    background: #ff9900;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.overlay button:hover{
+    background: #e67e00;
+    transform: scale(1.05);
+}
+
+/* ================= COURSE OVERVIEW ================= */
+
+.about-course{
+    padding: 70px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.about-course h1{
+    font-size: 45px;
+    color: #232f3e;
+    margin-bottom: 30px;
+}
+
+.about-course p{
+    font-size: 20px;
+    line-height: 35px;
+    width: 80%;
+    margin: auto;
+    color: #555;
+}
+
+/* ================= SUBJECTS ================= */
+
+.subjects{
+    padding: 70px;
+    background: white;
+}
+.subjects img{
+    border-radius: 100px;
+}
+.subjects h1{
+    text-align: center;
+    font-size: 45px;
+    color: #232f3e;
+    margin-bottom: 50px;
+}
+
+.subject-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.subject-card{
+    width: 270px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.4s;
+    
+}
+
+.subject-card:hover{
+    transform: translateY(-12px);
+    }
+
+.subject-card img{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    }
+
+.subject-card img:hover{
+    opacity: 0.5;
+}
+
+.subject-card h2{
+    margin-top: 20px;
+    color: #232f3e;
+}
+
+.subject-card p{
+    color: gray;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+.subject-card button{
+    margin: 25px;
+    padding: 12px 30px;
+    border: none;
+    background: #ff9900;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.subject-card button:hover{
+    background: #e67e00;
+}
+
+/* ================= FEATURES ================= */
+
+.course-features{
+    padding: 70px;
+    background: #232f3e;
+    color: white;
+}
+
+.course-features h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.feature-grid div{
+    background: #37475a;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.feature-grid div:hover{
+    background: #ff9900;
+    transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.course-hero{
+    height: 400px;
+}
+
+.overlay h1{
+    font-size: 38px;
+}
+
+.overlay p{
+    font-size: 18px;
+}
+
+.about-course{
+    padding: 40px 20px;
+}
+
+.about-course p{
+    width: 100%;
+}
+
+.subject-card{
+    width: 90%;
+}
+
+.feature-grid{
+    grid-template-columns: repeat(1,1fr);
+}
+
+}
+
+/**chapter**/----------------------------------------------------------------
+/* ================= CHAPTER SECTION ================= */
+
+.chapters{
+    background:#f5f5f5;
+    padding:70px;
+}
+
+.chapters h1{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:50px;
+    color:#232f3e;
+}
+
+.chapter-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.chapter-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.chapter-card:hover{
+    transform:translateY(-8px);
+}
+
+.chapter-card h2{
+    color:#ff9900;
+}
+
+.chapter-card h3{
+    margin-top:10px;
+}
+
+.chapter-card p{
+    margin:20px 0;
+    color:gray;
+}
+
+.chapter-btn{
+    display:flex;
+    justify-content:space-between;
+}
+
+.read-btn{
+    background:#ff9900;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.video-btn{
+    background:#232f3e;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* ================= DOWNLOAD ================= */
+
+.download{
+    padding:70px;
+    background:white;
+}
+
+.download h1{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:45px;
+}
+
+.download-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.download-box{
+    background:#232f3e;
+    color:white;
+    text-align:center;
+    padding:35px;
+    border-radius:15px;
+    font-size:22px;
+}
+
+.download-box button{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    background:#ff9900;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.download-box button:hover{
+    background:#e67e00;
+}
+
+/**watch**/
+/* ================= VIDEOS ================= */
+
+.video-section{
+
+padding:70px;
+
+background:#f3f3f3;
+
+}
+
+.video-section h1{
+
+text-align:center;
+
+font-size:45px;
+
+margin-bottom:50px;
+
+}
+
+.video-container{
+
+display:flex;
+
+justify-content:space-evenly;
+
+flex-wrap:wrap;
+
+}
+
+.video-card{
+
+width:320px;
+
+background:white;
+
+margin:20px;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.video-card img{
+
+width:100%;
+
+height:200px;
+
+object-fit:cover;
+
+}
+
+.video-card h2{
+
+padding:15px;
+
+}
+
+.video-card p{
+
+padding:0 15px;
+
+color:gray;
+
+}
+
+.video-card button{
+
+margin:20px 15px;
+
+padding:12px 25px;
+
+background:#ff9900;
+
+border:none;
+
+color:white;
+
+border-radius:6px;
+
+cursor:pointer;
+
+}
+
+/* ================= REVIEWS ================= */
+
+.review-section{
+
+padding:70px;
+
+background:white;
+
+}
+
+.review-section h1{
+
+text-align:center;
+
+font-size:45px;
+
+margin-bottom:50px;
+
+}
+
+.review-container{
+
+display:flex;
+
+justify-content:space-evenly;
+
+flex-wrap:wrap;
+
+}
+
+.review-card{
+
+width:300px;
+
+padding:25px;
+
+background:#f5f5f5;
+
+border-radius:15px;
+
+text-align:center;
+
+margin:20px;
+
+}
+
+.review-card img{
+
+width:100px;
+
+height:100px;
+
+border-radius:50%;
+
+}
+
+.review-card p{
+
+margin-top:15px;
+
+line-height:28px;
+
+}
+
+/* ================= FAQ ================= */
+
+.faq{
+
+padding:70px;
+
+background:#232f3e;
+
+color:white;
+
+}
+
+.faq h1{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.faq-box{
+
+background:#37475a;
+
+padding:25px;
+
+margin:20px auto;
+
+width:80%;
+
+border-radius:10px;
+
+}
+
+/* ================= CONTACT ================= */
+
+.contact-course{
+
+padding:80px;
+
+text-align:center;
+
+background:#ff9900;
+
+color:white;
+
+}
+
+.contact-course h1{
+
+font-size:45px;
+
+}
+
+.contact-course p{
+
+font-size:20px;
+
+margin:20px;
+
+}
+
+.contact-course button{
+
+padding:15px 35px;
+
+border:none;
+
+background:white;
+
+color:black;
+
+border-radius:30px;
+
+cursor:pointer;
+
+font-size:18px;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+background:#131a22;
+
+color:white;
+
+padding:50px;
+
+}
+
+.footer-container{
+
+display:flex;
+
+justify-content:space-evenly;
+
+flex-wrap:wrap;
+
+}
+
+.footer-container div{
+
+width:250px;
+
+}
+
+.footer-container h2{
+
+margin-bottom:20px;
+
+}
+
+.footer-container p{
+
+margin:10px 0;
+
+color:#ddd;
+
+}
+
+.copyright{
+
+text-align:center;
+
+margin-top:40px;
+
+font-size:18px;
+
+color:#aaa;
+
+}
+
+/**11 part4**/
+/* ================= LIVE CLASSES ================= */
+
+.live-class{
+
+padding:70px;
+
+background:#f5f5f5;
+
+}
+
+.live-class h1{
+
+text-align:center;
+
+font-size:45px;
+
+margin-bottom:50px;
+
+}
+
+.live-container{
+
+display:flex;
+
+justify-content:space-evenly;
+
+flex-wrap:wrap;
+
+}
+
+.live-card{
+
+width:300px;
+
+background:white;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+margin:20px;
+
+}
+
+.live-card button{
+
+margin-top:20px;
+
+padding:12px 25px;
+
+background:#ff9900;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+cursor:pointer;
+
+}
+
+/* ================= RANKERS ================= */
+
+.rankers{
+
+padding:70px;
+
+background:white;
+
+}
+
+.rankers h1{
+
+text-align:center;
+
+font-size:45px;
+
+margin-bottom:40px;
+
+}
+
+.rank-container{
+
+display:flex;
+
+justify-content:space-evenly;
+
+flex-wrap:wrap;
+
+}
+
+.rank-card{
+
+width:250px;
+
+background:#f3f3f3;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:15px;
+
+margin:20px;
+
+}
+
+.rank-card img{
+
+width:100px;
+
+height:100px;
+
+border-radius:50%;
+
+}
+
+/* ================= TABLE ================= */
+
+.study-plan{
+
+padding:70px;
+
+background:#232f3e;
+
+color:white;
+
+}
+
+.study-plan h1{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+table{
+
+width:90%;
+
+margin:auto;
+
+border-collapse:collapse;
+
+}
+
+th{
+
+background:#ff9900;
+
+padding:18px;
+
+}
+
+td{
+
+border:1px solid white;
+
+padding:15px;
+
+text-align:center;
+
+}
+
+/* ================= DOWNLOAD ================= */----------------------------------------------------------------
+
+.download-app{
+
+padding:90px;
+
+background:linear-gradient(to right,#141e30,#243b55);
+
+text-align:center;
+
+color:white;
+
+}
+
+.download-app h1{
+
+font-size:50px;
+
+}
+
+.download-app p{
+
+font-size:22px;
+
+margin:25px;
+
+}
+
+.download-app button{
+
+padding:15px 40px;
+
+font-size:18px;
+
+border:none;
+
+background:#ff9900;
+
+color:white;
+
+border-radius:30px;
+
+cursor:pointer;
+
+}
+
+.download-app button:hover{
+
+background:#e67e00;
+
+}
+
+
+.english-hero{
+height:90vh;
+background:url("english-banner.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.english-overlay{
+background:rgba(0,0,0,.65);
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.english-overlay h1{
+font-size:65px;
+color:#ff9900;
+}
+
+.english-overlay p{
+font-size:22px;
+margin:25px;
+}
+
+.english-overlay button{
+padding:15px 35px;
+background:#ff9900;
+border:none;
+color:white;
+border-radius:30px;
+cursor:pointer;
+}
+
+.english-chapters{
+padding:80px;
+background:#f5f5f5;
+}
+
+.english-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.english-card{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.english-card button{
+margin-top:20px;
+padding:12px 25px;
+background:#ff9900;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.grammar{
+padding:80px;
+background:white;
+}
+
+.grammar h1{
+text-align:center;
+margin-bottom:40px;
+}
+
+.grammar-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.grammar-grid div{
+background:#232f3e;
+color:white;
+padding:25px;
+text-align:center;
+border-radius:10px;
+}
