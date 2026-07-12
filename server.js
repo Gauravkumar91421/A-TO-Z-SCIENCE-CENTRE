@@ -4,9 +4,9 @@ const path = require("path");
 const User = require("./models/User");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-mongoose.connect("mongodb://127.0.0.1:27017/ATOZScienceCentre")
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => {
     console.log("✅ MongoDB Connected");
 })
