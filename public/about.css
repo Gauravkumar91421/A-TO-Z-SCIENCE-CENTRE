@@ -1,0 +1,791 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f6fa;
+    color:#333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(90deg,#ff5b00,#ff7b00);
+    color:white;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo h1{
+    font-size:32px;
+    font-weight:700;
+}
+
+.logo p{
+    margin-top:5px;
+    font-size:15px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover,
+nav a.active{
+    color:#222;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    height:500px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),
+    rgba(0,0,0,.65)),
+    url("images/library.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+}
+
+.hero-text{
+
+    width:50%;
+    color:white;
+
+}
+
+.hero-text h2{
+
+    font-size:70px;
+    margin-bottom:15px;
+
+}
+
+.hero-text span{
+
+    color:#ff7b00;
+
+}
+
+.hero-text p{
+
+    font-size:22px;
+    line-height:1.8;
+
+}
+
+.hero-image{
+
+    width:40%;
+    display:flex;
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:330px;
+    height:330px;
+
+    border-radius:50%;
+
+    border:6px solid white;
+
+    object-fit:cover;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+}
+
+/* =========================
+   FOUNDER CARD
+========================= */
+
+.founder{
+
+    margin-top:-70px;
+    padding:0 8% 70px;
+
+}
+
+.founder-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:50px;
+
+}
+
+.founder-photo img{
+
+    width:260px;
+    height:260px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #ff6b00;
+
+}
+
+.founder-info{
+
+    flex:1;
+
+}
+
+.founder-info h3{
+
+    color:#ff6b00;
+    font-size:28px;
+
+}
+
+.founder-info h2{
+
+    font-size:42px;
+    margin:10px 0;
+
+}
+
+.college{
+
+    color:#ff6b00;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+.founder-info p{
+
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:15px;
+
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons{
+
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+
+}
+
+.btn{
+
+    background:#ff6b00;
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#e55d00;
+
+}
+
+.btn2{
+
+    text-decoration:none;
+
+    border:2px solid #ff6b00;
+
+    color:#ff6b00;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn2:hover{
+
+    background:#ff6b00;
+
+    color:white;
+
+}
+
+/* =========================
+   ABOUT WEBSITE
+========================= */
+
+.about-site{
+
+    width:85%;
+    margin:70px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+
+}
+
+.about-site .left{
+
+    flex:1;
+    text-align:center;
+
+}
+
+.about-site .left img{
+
+    width:100%;
+    max-width:420px;
+
+}
+
+.about-site .right{
+
+    flex:1;
+
+}
+
+.about-site h2{
+
+    font-size:42px;
+    color:#ff6b00;
+    margin-bottom:20px;
+
+}
+
+.about-site p{
+
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:18px;
+    color:#555;
+
+}
+
+/* =========================
+   MISSION & VISION
+========================= */
+
+.mission{
+
+    width:85%;
+    margin:70px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:#ff6b00;
+
+    margin-bottom:20px;
+
+}
+
+.card h2{
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    font-size:17px;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* =========================
+   WHAT WE OFFER
+========================= */
+
+.services{
+
+    padding:80px 8%;
+
+    background:#fff;
+
+}
+
+.services h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#ff6b00;
+
+    margin-bottom:50px;
+
+}
+
+.service-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+}
+
+.service{
+
+    background:#f8f8f8;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    border:2px solid transparent;
+
+}
+
+.service:hover{
+
+    background:white;
+
+    border-color:#ff6b00;
+
+    transform:translateY(-10px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+
+}
+
+.service i{
+
+    font-size:50px;
+
+    color:#ff6b00;
+
+    margin-bottom:18px;
+
+}
+
+.service h3{
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.service p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:16px;
+
+}
+
+/* =========================
+   STATISTICS SECTION
+========================= */
+
+.stats{
+
+    background:linear-gradient(135deg,#ff6b00,#ff8c00);
+
+    color:white;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:30px;
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+.stat h2{
+
+    font-size:50px;
+
+    font-weight:700;
+
+}
+
+.stat p{
+
+    font-size:18px;
+
+    margin-top:10px;
+
+}
+
+/* =========================
+   CALL TO ACTION
+========================= */
+
+.thanks{
+
+    width:85%;
+
+    margin:80px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:60px 40px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.thanks h2{
+
+    font-size:42px;
+
+    color:#ff6b00;
+
+    margin-bottom:20px;
+
+}
+
+.thanks p{
+
+    font-size:18px;
+
+    color:#555;
+
+    line-height:1.8;
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+.thanks .btn{
+
+    margin-top:35px;
+
+    display:inline-block;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background:#1f1f1f;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+footer h2{
+
+    color:#ff8c00;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+    color:#ccc;
+
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:992px){
+
+.hero{
+
+    height:auto;
+
+    padding:70px 0;
+
+}
+
+.overlay{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:40px;
+
+}
+
+.hero-text{
+
+    width:100%;
+
+}
+
+.hero-text h2{
+
+    font-size:48px;
+
+}
+
+.hero-text p{
+
+    font-size:18px;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+}
+
+.hero-image img{
+
+    width:260px;
+
+    height:260px;
+
+}
+
+.founder-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.about-site{
+
+    flex-direction:column;
+
+}
+
+.about-site .left img{
+
+    max-width:300px;
+
+}
+
+.buttons{
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+nav a{
+
+    padding:10px;
+
+    font-size:15px;
+
+}
+
+.logo h1{
+
+    font-size:26px;
+
+}
+
+.hero-text h2{
+
+    font-size:38px;
+
+}
+
+.about-site h2,
+
+.services h2,
+
+.thanks h2,
+
+.founder-info h2{
+
+    font-size:30px;
+
+}
+
+.founder-photo img{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+.service{
+
+    padding:25px;
+
+}
+
+.card{
+
+    padding:25px;
+
+}
+
+.stat h2{
+
+    font-size:36px;
+
+}
+
+.thanks{
+
+    padding:40px 20px;
+
+}
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
