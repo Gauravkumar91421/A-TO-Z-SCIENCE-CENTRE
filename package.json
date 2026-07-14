@@ -1,12 +1,13 @@
 {
-  "name": "a-to-z-science-center" ,
-  "version":"1.0.0",
-  "main":"server.js",
-  "scripts":{
+  "name": "a-to-z-science-center",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^5.2.1",
+    "google-auth-library": "^10.9.0",
     "mongoose": "^9.7.4"
   }
 }

@@ -1,3 +1,6 @@
+const { OAuth2Client } = require("google-auth-library");
+
+const client = new OAuth2Client("845623011305-ekj7cnk646cmi22qdnkrfhtp6bobu4p1.apps.googleusercontent.com");
 const mongoose = require("mongoose");
 const express = require("express");
 const path = require("path");
@@ -111,18 +114,31 @@ app.post("/api/auth/google", async (req, res) => {
   try {
     const { credential } = req.body;
 
-    // Abhi ke liye sirf test
-    console.log("Google Token:", credential);
+    const ticket = await client.verifyIdToken({
+      idToken: credential,
+      audience: "TUMHARA_GOOGLE_CLIENT_ID"
+    });
 
-    // Yahan baad me token verify karke MongoDB me user save karenge
+    const payload = ticket.getPayload();
+
+    let user = await User.findOne({ email: payload.email });
+
+    if (!user) {
+      user = new User({
+        name: payload.name,
+        email: payload.email,
+        password: ""
+      });
+
+      await user.save();
+    }
 
     res.json({
-      success: true,
-      message: "Google login successful"
+      success: true
     });
 
   } catch (err) {
-    console.error(err);
+    console.log(err);
     res.status(500).json({
       success: false
     });
