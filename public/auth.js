@@ -116,4 +116,6 @@ if (data.success) {
 function handleCredentialResponse(response) {
     console.log(response);
     alert("Google Login Successful!");
+
+    window.location.href = "home.html";
 }
