@@ -28,7 +28,11 @@
 <div class="menu-btn" onclick="toggleMenu()">
     ☰
 </div>
+
 <div id="sideMenu" class="side-menu">
+    <div class="logout">
+    <button onclick="Logout()">🚪Logout</button>
+</div>
     <div class="menu-profile">
     <img src="founder.webp" alt="Gaurav Kumar">
 
@@ -328,6 +332,18 @@ Success Rate
     } else {
         menu.style.right = "0px";
     }
-}</script>
+}
+
+function logout() {
+    localStorage.clear();
+    sessionStorage.clear();
+
+    if (window.google && google.accounts.id) {
+        google.accounts.id.disableAutoSelect();
+    }
+
+    window.location.href = "index.html";
+}
+</script>
 </body>
 </html>

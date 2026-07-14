@@ -180,6 +180,28 @@ a{
     color:#bbb;
     font-size:14px;
 }
+.logout {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.logout button {
+    width: 85%;
+    padding: 10px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout button:hover {
+    background: #d63031;
+    transform: scale(1.03);
+}
 .hero{
     height:90vh;
     background-image:url("banner1.png");
