@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://a-to-z-science-centre.onrender.com/sitemap.xml
