@@ -114,8 +114,18 @@ if (data.success) {
 }
 
 function handleCredentialResponse(response) {
-    console.log(response);
-    alert("Google Login Successful!");
-
-    window.location.href = "home.html";
+    alert("Google login successful")
+    fetch("/api/auth/google", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            credential: response.credential
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        window.location.href = "home.html";
+    });
 }
