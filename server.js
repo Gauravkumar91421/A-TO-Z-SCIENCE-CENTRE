@@ -106,6 +106,28 @@ app.post("/login", async (req, res) => {
 
 });
 console.log(__dirname);
+
+app.post("/api/auth/google", async (req, res) => {
+  try {
+    const { credential } = req.body;
+
+    // Abhi ke liye sirf test
+    console.log("Google Token:", credential);
+
+    // Yahan baad me token verify karke MongoDB me user save karenge
+
+    res.json({
+      success: true,
+      message: "Google login successful"
+    });
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({
+      success: false
+    });
+  }
+});
 // Start Server
 app.listen(PORT, () => {
     console.log(`Server Running at http://localhost:${PORT}`);

@@ -129,3 +129,9 @@ function handleCredentialResponse(response) {
         window.location.href = "home.html";
     });
 }
+
+document.getElementById("googleLoginBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    google.accounts.id.prompt();
+});
