@@ -8,12 +8,13 @@
 </head>
 <body>
     
-</body>
-</html><section class="notes-hero">
+<section class="notes-hero">
     <h1>Study Notes Library</h1>
     <p>Class 11, 12, English, Quiz and Board Notes</p>
 
-    <input type="text" placeholder="Search Notes Here">
+    <input type="text"
+    id="searchBox" 
+    placeholder="Search Notes Here">
 </section>
 
 <section class="categories">
@@ -43,7 +44,9 @@
 <section class="notes-container">
 
     <div class="note-card">
+        <a href="pdf.html?file=unit.pdf">
         <img src="physics.jpg">
+        </a>
         <h2>Physics Chapter 1</h2>
         <p>Motion and Measurement Notes PDF.</p>
         <button>Download PDF</button>
@@ -108,3 +111,29 @@
     </div>
 
 </section>
+<script>
+    const searchBox = document.getElementById("searchBox");
+
+searchBox.addEventListener("keyup", function () {
+
+    let value = searchBox.value.toLowerCase();
+
+    let cards = document.querySelectorAll(".note-card");
+
+    cards.forEach(function(card){
+
+        let title = card.querySelector("h2").textContent.toLowerCase();
+        let subject = card.querySelector("p").textContent.toLowerCase();
+
+        if(title.includes(value) || subject.includes(value)){
+            card.style.display = "block";
+        }else{
+            card.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+</body>
+</html>
