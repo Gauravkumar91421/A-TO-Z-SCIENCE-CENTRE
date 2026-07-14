@@ -138,11 +138,11 @@ function handleCredentialResponse(response) {
   console.error(err);
 });
 }
-const googleBtn = document.getElementById("googleLoginBtn");
+//const googleBtn = document.getElementById("googleLoginBtn");
 
-if (googleBtn) {
-    googleBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        google.accounts.id.prompt();
-    });
-}
+//if (googleBtn) {
+  //  googleBtn.addEventListener("click", function (e) {
+    //    e.preventDefault();
+      //  google.accounts.id.prompt();
+   // });
+//}

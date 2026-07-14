@@ -117,7 +117,7 @@ a{
     font-size:14px;
 }
 
-.social-container{
+/**.social-container{
     margin:20px 0;
 }
 
@@ -138,7 +138,7 @@ a{
     background:#ff4b2b;
     color:#fff;
     border-color:#ff4b2b;
-}
+}**/
 
 /* ========================= */
 /* PART 2B - Overlay Animation */
