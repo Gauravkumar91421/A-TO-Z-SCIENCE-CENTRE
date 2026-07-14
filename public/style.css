@@ -180,12 +180,12 @@ a{
     color:#bbb;
     font-size:14px;
 }
-.logout {
+.Logout {
     text-align: center;
     margin: 15px 0;
 }
 
-.logout button {
+.Logout button {
     width: 85%;
     padding: 10px;
     background: #ff4d4d;
@@ -198,7 +198,7 @@ a{
     transition: 0.3s;
 }
 
-.logout button:hover {
+.Logout button:hover {
     background: #d63031;
     transform: scale(1.03);
 }
