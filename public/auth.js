@@ -116,18 +116,27 @@ if (data.success) {
 function handleCredentialResponse(response) {
     alert("Google login successful")
     fetch("/api/auth/google", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            credential: response.credential
-        })
-    })
-    .then(res => res.json())
-    .then(data => {
-        window.location.href = "home.html";
-    });
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    credential: response.credential
+  })
+})
+.then(res => res.json())
+.then(data => {
+  console.log(data);
+
+  if (data.success) {
+    window.location.href = "/home";
+  } else {
+    alert(data.message || "Login failed");
+  }
+})
+.catch(err => {
+  console.error(err);
+});
 }
 
 document.getElementById("googleLoginBtn").addEventListener("click", function (e) {
