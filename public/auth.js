@@ -138,9 +138,11 @@ function handleCredentialResponse(response) {
   console.error(err);
 });
 }
+const googleBtn = document.getElementById("googleLoginBtn");
 
-document.getElementById("googleLoginBtn").addEventListener("click", function (e) {
-    e.preventDefault();
-
-    google.accounts.id.prompt();
-});
+if (googleBtn) {
+    googleBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        google.accounts.id.prompt();
+    });
+}
