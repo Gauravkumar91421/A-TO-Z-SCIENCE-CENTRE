@@ -25,6 +25,14 @@ app.use(express.json());
     //console.log("Request:" ,req.method, req.url);
    // next();
 //});
+app.get("/robots.txt", (req, res) => {
+  res.setHeader("Content-Type", "text/plain");
+  res.send(`User-agent: *
+Allow: /
+
+Sitemap: https://a-to-z-science-centre.onrender.com/sitemap.xml`);
+});
+
 
 // Public Folder
 app.use(express.static(path.join(__dirname, "public")));
