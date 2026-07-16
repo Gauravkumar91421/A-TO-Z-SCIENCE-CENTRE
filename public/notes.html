@@ -1,119 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Notes Library</title>
+
+<link rel="stylesheet" href="notes.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
+
 <body>
-    
-<section class="notes-hero">
-    <h1>Study Notes Library</h1>
-    <p>Class 11, 12, English, Quiz and Board Notes</p>
 
-    <input type="text"
-    id="searchBox" 
-    placeholder="Search Notes Here">
+<header class="hero">
+
+<nav>
+
+<div class="logo">
+📚 A TO Z SCIENCE CENTRE
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Courses</a></li>
+<li><a href="#">Quiz</a></li>
+<li><a href="#">Notes</a></li>
+
+</ul>
+
+</nav>
+
+<div class="hero-text">
+
+<h1>Learn Without Limits</h1>
+
+<p>
+Find chapterwise short notes for Class 11 & 12.
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="search"
+placeholder="Search notes...">
+
+<button>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+<!---------------- Physics ---------------->
+
+<section class="subject">
+
+<div class="heading">
+
+<h2>📘 Class 11 Physics</h2>
+
+<a href="#">View All →</a>
+
+</div>
+
+<div class="slider">
+
+<button class="arrow left"
+onclick="scrollLeft('physics')">
+
+❮
+
+</button>
+
+<div class="cards" id="physics">
+
+<div class="card">
+
+<h3>Motion in Straight Line</h3>
+
+<p>5 min read</p>
+
+<a href="#">View</a>
+
+</div>
+
+<div class="card">
+
+<h3>Units & Measurements</h3>
+
+<p>4 min read</p>
+
+<a href="#">View</a>
+
+</div>
+
+<div class="card">
+
+<h3>Motion in Plane</h3>
+
+<p>6 min read</p>
+
+<a href="#">View</a>
+
+</div>
+
+<div class="card">
+
+<h3>Laws of Motion</h3>
+
+<p>7 min read</p>
+
+<a href="#">View</a>
+
+</div>
+
+<div class="card">
+
+<h3>Work Energy Power</h3>
+
+<p>5 min read</p>
+
+<a href="#">View</a>
+
+</div>
+
+</div>
+
+<button class="arrow right"
+onclick="scrollRight('physics')">
+
+❯
+
+</button>
+
+</div>
+
 </section>
 
-<section class="notes-container">
+<!---------------- Chemistry ---------------->
 
-    <div class="note-card">
-        <img src="motion1D.png">
-        
-        <h2>Motion in 1D</h2>
-        <p>short notes</p>
-        
-        <a href="motion1D.png">
-        <button>Download PDF</button>
-        </a>
-    </div>
-    
-    <div class="note-card">
-        <img src="workpwer.png">
-        <h2>work power energy</h2>
-        <p>short notes</p>
-        <a href="workpwer.png">
-        <button>Download PDF</button>
-        </a>
-    </div>
+<section class="subject">
 
-    <div class="note-card">
-        <img src="biology.jpg">
-        <h2>Biology Notes</h2>
-        <p>Cell Structure Complete Notes.</p>
-        <button>Download PDF</button>
-    </div>
+<div class="heading">
 
-    <div class="note-card">
-        <img src="english.jpg">
-        <h2>English Notes</h2>
-        <p>Grammar and Writing Notes.</p>
-        <button>Download PDF</button>
-    </div>
+<h2>🧪 Class 11 Chemistry</h2>
+
+<a href="#">View All →</a>
+
+</div>
+
+<div class="slider">
+
+<button class="arrow left"
+onclick="scrollLeft('chemistry')">
+
+❮
+
+</button>
+
+<div class="cards"
+id="chemistry">
+
+<div class="card">
+
+<h3>Structure of Atom</h3>
+
+<p>5 min read</p>
+
+<a href="#">View</a>
+
+</div>
+
+<div class="card">
+
+<h3>Chemical Bonding</h3>
+
+<p>7 min read</p>
+
+<a href="#">View</a>
+
+</div>
+
+<div class="card">
+
+<h3>Thermodynamics</h3>
+
+<p>5 min read</p>
+
+<a href="#">View</a>
+
+</div>
+
+<div class="card">
+
+<h3>Equilibrium</h3>
+
+<p>6 min read</p>
+
+<a href="#">View</a>
+
+</div>
+
+<div class="card">
+
+<h3>Redox Reactions</h3>
+
+<p>5 min read</p>
+
+<a href="#">View</a>
+
+</div>
+
+</div>
+
+<button class="arrow right"
+onclick="scrollRight('chemistry')">
+
+❯
+
+</button>
+
+</div>
 
 </section>
 
-<section class="latest">
+<footer>
 
-    <h1>Latest Uploads</h1>
+<p>
 
-    <div class="upload-box">
-        ✔ Class 12 Physics Notes Uploaded
-    </div>
+© 2026 A TO Z SCIENCE CENTRE
 
-    <div class="upload-box">
-        ✔ English Guess Paper Added
-    </div>
+</p>
 
-    <div class="upload-box">
-        ✔ Biology Quiz Available
-    </div>
+</footer>
 
-</section>
+<script src="notes.js"></script>
 
-<section class="stats">
-
-    <div>
-        <h1>500+</h1>
-        <p>Notes</p>
-    </div>
-
-    <div>
-        <h1>2000+</h1>
-        <p>Students</p>
-    </div>
-
-    <div>
-        <h1>150+</h1>
-        <p>Quiz</p>
-    </div>
-
-</section>
-<script>
-    const searchBox = document.getElementById("searchBox");
-
-searchBox.addEventListener("keyup", function () {
-
-    let value = searchBox.value.toLowerCase();
-
-    let cards = document.querySelectorAll(".note-card");
-
-    cards.forEach(function(card){
-
-        let title = card.querySelector("h2").textContent.toLowerCase();
-        let subject = card.querySelector("p").textContent.toLowerCase();
-
-        if(title.includes(value) || subject.includes(value)){
-            card.style.display = "block";
-        }else{
-            card.style.display = "none";
-        }
-
-    });
-
-});
-</script>
 </body>
+
 </html>

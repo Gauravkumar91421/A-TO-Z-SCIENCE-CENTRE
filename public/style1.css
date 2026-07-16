@@ -371,6 +371,11 @@ transform:translateY(-10px);
 
 }
 
+hr{
+    background-color: #b8762b;
+    width: 1600px;
+    height: 35px;
+}
 .video-card img{
 
 width:100%;
