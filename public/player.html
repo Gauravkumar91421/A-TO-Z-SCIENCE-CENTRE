@@ -173,8 +173,8 @@ Learn • Understand • Succeed
 
 <div class="buttons">
 
-<button class="btn">
-📚 Notes
+<button id="notesBtn" class="btn">
+📚 Short Notes
 </button>
 
 <button class="btn">
@@ -198,6 +198,16 @@ document.getElementById("player").src=
 
 document.getElementById("title").innerHTML=
 decodeURIComponent(title);
+
+const notes = params.get("notes");
+
+document.getElementById("notesBtn").onclick = () => {
+    if (notes) {
+        window.open(notes, "_blank");
+    } else {
+        alert("Notes not available.");
+    }
+};
 
 </script>
 
