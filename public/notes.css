@@ -18,7 +18,7 @@ body{
 
 .hero{
     background:linear-gradient(rgba(15,23,42,.75),rgba(15,23,42,.85)),
-    url("images/library.jpg");
+    url("front.png");
     background-size:cover;
     background-position:center;
     padding:30px 8%;

@@ -109,226 +109,244 @@ a{
     color:#ff9900;
     font-size:45px;
 }
-/**11**/
-/* ================= HERO SECTION ================= */
+/* ===========================
+      PHYSICS SECTION
+=========================== */
 
-.course-hero{
-    height: 500px;
-    background-image: url("banner11.jpg");
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.physics-section{
+    width:90%;
+    max-width:1300px;
+    margin:80px auto;
 }
 
-.overlay{
-    background:  #232f3e;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+.physics-heading{
+    text-align:center;
+    margin-bottom:50px;
 }
 
-.overlay h1{
-    font-size: 65px;
-    color: #ff9900;
-    letter-spacing: 3px;
+.tag{
+    display:inline-block;
+    padding:8px 20px;
+    border-radius:30px;
+    background:#dbeafe;
+    color:#2563eb;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:15px;
 }
 
-.overlay p{
-    font-size: 22px;
-    margin-top: 20px;
+.physics-heading h2{
+    font-size:42px;
+    color:#1e293b;
+    margin-bottom:10px;
 }
 
-.overlay button{
-    margin-top: 35px;
-    padding: 15px 40px;
-    font-size: 18px;
-    border: none;
-    background: #ff9900;
-    color: white;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.3s;
+.physics-heading p{
+    font-size:18px;
+    color:#64748b;
 }
-
-.overlay button:hover{
-    background: #e67e00;
-    transform: scale(1.05);
-}
-
-/* ================= COURSE OVERVIEW ================= */
-
-.about-course{
-    padding: 70px;
-    text-align: center;
-    background: #f4f4f4;
-}
-
-.about-course h1{
-    font-size: 45px;
-    color: #232f3e;
-    margin-bottom: 30px;
-}
-
-.about-course p{
-    font-size: 20px;
-    line-height: 35px;
-    width: 80%;
-    margin: auto;
-    color: #555;
-}
-
-/* ================= SUBJECTS ================= */
-
-.subjects{
-    padding: 70px;
-    background: white;
-}
-.subjects img{
-    border-radius: 100px;
-}
-.subjects h1{
-    text-align: center;
-    font-size: 45px;
-    color: #232f3e;
-    margin-bottom: 50px;
-}
-
-.subject-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.subject-card{
-    width: 270px;
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    margin: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: 0.4s;
-    
-}
-
-.subject-card:hover{
-    transform: translateY(-12px);
-    }
-
-.subject-card img{
-    width: 200px;
-    height: 200px;
-    margin-top: 25px;
-    }
-
-.subject-card img:hover{
-    opacity: 0.5;
-}
-
-.subject-card h2{
-    margin-top: 20px;
-    color: #232f3e;
-}
-
-.subject-card p{
-    color: gray;
-    line-height: 30px;
-    margin-top: 15px;
-}
-
-.subject-card button{
-    margin: 25px;
-    padding: 12px 30px;
-    border: none;
-    background: #ff9900;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.subject-card button:hover{
-    background: #e67e00;
-}
-
-/* ================= FEATURES ================= */
-
-.course-features{
-    padding: 70px;
-    background: #232f3e;
-    color: white;
-}
-
-.course-features h1{
-    text-align: center;
-    font-size: 45px;
-    margin-bottom: 50px;
-}
-
-.feature-grid{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 25px;
-}
-
-.feature-grid div{
-    background: #37475a;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 22px;
-    transition: 0.3s;
-}
-
-.feature-grid div:hover{
-    background: #ff9900;
-    transform: scale(1.05);
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:768px){
-
-.course-hero{
-    height: 400px;
-}
-
-.overlay h1{
-    font-size: 38px;
-}
-
-.overlay p{
-    font-size: 18px;
-}
-
-.about-course{
-    padding: 40px 20px;
-}
-
-.about-course p{
-    width: 100%;
-}
-
-.subject-card{
-    width: 90%;
-}
-
-.feature-grid{
-    grid-template-columns: repeat(1,1fr);
-}
-
-}
-
 /**chapter**/----------------------------------------------------------------
 /* ================= CHAPTER SECTION ================= */
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+
+background: white;
+
+}
+.video-state{
+   color: rgb(27, 40, 48);
+   text-align: center;
+   font-weight: 700;
+}
+.video-header{
+
+background:#131921;
+
+padding:20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:white;
+
+}
+
+.video-header input{
+
+width:350px;
+
+padding:12px;
+
+border-radius:30px;
+
+border:none;
+
+}
+
+.category{
+
+display:flex;
+
+justify-content:center;
+
+padding:20px;
+
+gap:15px;
+
+background:white;
+
+}
+
+.category button{
+
+padding:10px 25px;
+
+border:none;
+
+background:#ff9900;
+
+color:white;
+
+border-radius:20px;
+
+cursor:pointer;
+
+}
+
+.category button:hover{
+
+background:#e67e00;
+
+}
+
+.videos{
+
+padding:50px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+.video-card{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+transition:.3s;
+
+}
+
+.video-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+hr{
+    background-color: #b8762b;
+    width: 1600px;
+    height: 35px;
+}
+.video-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.video-card h2{
+
+padding:15px;
+
+}
+
+.videos{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    padding:20px;
+    scroll-snap-type:x mandatory;
+}
+
+.video-card{
+    min-width:300px;
+    flex-shrink:0;
+    scroll-snap-align:start;
+}
+.video-card p{
+
+padding:0 15px;
+
+color:gray;
+
+}
+
+.video-card button{
+
+margin:20px 15px;
+
+padding:12px 25px;
+
+border:none;
+
+background:#ff9900;
+
+color:white;
+
+border-radius:5px;
+
+cursor:pointer;
+
+}
+
+.video-card button:hover{
+
+background:#e67e00;
+
+}
+
+@media(max-width:768px){
+
+.video-header{
+
+flex-direction:column;
+
+}
+
+.video-header input{
+
+width:100%;
+
+margin-top:20px;
+
+}
+
+}
+
+
 .chapters{
-    background:#f5f5f5;
+    background: white;
     padding:70px;
 }
 

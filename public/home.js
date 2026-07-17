@@ -240,3 +240,10 @@ function toggleMenu() {
         menu.style.right = "0px";
     }
 }
+
+function logout() {
+    alert("Logout clicked");
+    localStorage.clear();
+    sessionStorage.clear();
+    window.location.href = "index.html";
+}
