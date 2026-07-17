@@ -232,7 +232,19 @@ color:#0d6efd;
 background:#084298;
 }
    
+.logout-btn{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 0 !important;
+}
 
+.logout-btn i,
+.logout-btn img{
+   color: white;
+    background: transparent !important;
+}
 /* ==========================
    HERO SECTION
 ========================== */
@@ -253,7 +265,9 @@ padding:0 8%;
 
 margin-top:0;
 
+
 }
+
 
 .overlay{
 

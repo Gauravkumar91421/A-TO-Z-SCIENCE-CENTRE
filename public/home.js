@@ -241,9 +241,23 @@ function toggleMenu() {
     }
 }
 
-function logout() {
-    alert("Logout clicked");
+document.getElementById("logoutBtn").addEventListener("click", () => {
+
+    // Local storage clear
     localStorage.clear();
+
+    // Session storage clear
     sessionStorage.clear();
-    window.location.href = "index.html";
+    // OK aur Cancel
+const result = confirm("Are you sure?logout");
+
+if (result) {
+    // User ne OK dabaya
+    console.log("Logout");
+} else {
+    // User ne Cancel dabaya
+    console.log("Logout Cancelled");
 }
+    // Login page par redirect
+    window.location.href = "index.html";
+});
