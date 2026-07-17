@@ -242,6 +242,8 @@ background:#084298;
 
 .logout-btn i,
 .logout-btn img{
+   height: 28px;
+   width: 28px;
    color: white;
     background: transparent !important;
 }
