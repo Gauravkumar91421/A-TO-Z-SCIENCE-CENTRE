@@ -254,10 +254,11 @@ const result = confirm("Are you sure?logout");
 if (result) {
     // User ne OK dabaya
     console.log("Logout");
+    
+    window.location.href = "index.html";
 } else {
     // User ne Cancel dabaya
     console.log("Logout Cancelled");
 }
     // Login page par redirect
-    window.location.href = "index.html";
 });
