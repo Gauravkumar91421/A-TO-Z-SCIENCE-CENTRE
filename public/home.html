@@ -1,29 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A TO Z APP</title>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BXXPM9MSTP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-BXXPM9MSTP');
-</script>
+<title>A TO Z SCIENCE CENTRE</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
+
 <body>
-    
-<!-- ================= HERO SECTION ================= -->
 
+<!-- ================= NAVBAR ================= -->
 
+<nav class="navbar">
 
+<div class="logo">
+
+<img src="logo.jpeg" alt="Logo">
+
+<div>
+
+<h2>A TO Z</h2>
+
+<p>SCIENCE CENTRE</p>
+
+</div>
+
+</div>
+
+<ul>
+
+<li><a href="home.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a href="quiz.html">Quiz</a></li>
+
+<li><a href="notes.html">PYQs</a></li>
+
+<li><a href="term.html">Term and Condition</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search notes...">
+
+</div>
+
+<button class="login">Sign In</button>
+
+<button class="signup">Sign Up</button>
+
+</div>
 
 <!-- Hamburger Menu -->
 <div class="menu-btn" onclick="toggleMenu()">
@@ -33,14 +82,14 @@
 <div id="sideMenu" class="side-menu">
     <div class="Logout">
     <button onclick="Logout()">🚪Logout</button>
-</div>
+
     <div class="menu-profile">
         <img src="founder.webp" alt="Gaurav Kumar">
 
     <h3>Gaurav Kumar</h3>
 
     <p>Founder • A TO Z SCIENCE CENTRE</p>
-</div>
+
 <a href="home.html">🏠 Home</a>
     <a href="watchvideos.html">🎥 Videos</a>
     <a href="notes.html">📚 Notes</a>
@@ -49,307 +98,1235 @@
     <a href="term.html">📝terms</a>
     <a href="privacy.html">📝Privacy</a>
 </div>
+</nav>
 
-
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
-    <div class="hero-text">
+<div class="overlay"></div>
 
-        <h1>WELCOME TO</h1>
+<div class="hero-content">
 
-        <h2>A TO Z SCIENCE CENTRE</h2>
+<div class="left">
 
-        <p>
-            Learn Science, English, Mathematics and
-            Board Preparation with High Quality Notes,
-            Video Lectures, MCQ Tests and Daily Practice.
-        </p>
+<span class="tag">
 
-        <div class="hero-btn">
-         <a href="startlearning.html">   
-            <button class="btn-start">
-                View Courses
-            </button>
-            </a>
-            <a href="watchvideos.html">
-            <button class="btn-video">
-                Watch Videos
-            </button>
-           </a>
-        </div>
+📚 Free Educational Resources
 
-    </div>
+</span>
 
-</section>
+<h1>
 
+Learn Without
 
-<!-- ================= FEATURES ================= -->
+<span>Limits</span>
 
-<section class="features">
-
-<h1 class="heading">Why Students Love Us</h1>
-
-<div class="feature-container">
-
-<a href="watchvideos.html">
-<div class="feature-box">
-
-<img src="video.jpeg">
-
-<h2>HD Video Lectures</h2>
-
-<p>
-Watch full HD classes anytime anywhere.
-</p>
-
-</div>
-</a>
-<a href="quiz.html">
-<div class="feature-box">
-
-<img src="quiz1.jpg">
-
-<h2>Daily Quiz</h2>
-
-<p>
-Practice MCQs and improve your preparation.
-</p>
-
-</div>
-</a>
-
-</a>
-<a href="notes.html">
-<div class="feature-box">
-
-<img src="notespic.png">
-
-<h2>Notes</h2>
-
-<p>
-Read Notes and improve your preparation.
-</p>
-
-</div>
-</a>
-
-</section>
-
-
-<!-- ================= POPULAR COURSES ================= -->
-
-<section class="popular">
-
-<h1 class="heading">
-Popular Courses
 </h1>
-<div class="courses">
-    <div class="course-container">
-<div class="course-card">
-<a href="11.html">
-<img src="11th.png">
-</a>
-<h2>Class 11 Science</h2>
 
 <p>
 
-Physics
+Explore high-quality chapterwise notes, quizzes,
 
-Chemistry
+formula sheets and previous year questions
 
-Biology
-
-Mathematics
+for Class 11 & 12.
 
 </p>
-<a href="11.html">
+
+<div class="hero-search">
+
+<input
+type="text"
+placeholder="Search notes, chapters, subjects...">
+
 <button>
-    Explore Course
+
+Search
 
 </button>
-</a>
+
 </div>
 
+<div class="popular">
 
-<div class="course-card">
-<a href="12th.html">
-<img src="12th.jpeg">
-</a>
-<h2>Class 12 Science</h2>
+<span>Popular :</span>
 
-<p>
+<a href="#">Physics</a>
 
-Complete Bihar Board Preparation
+<a href="#">Chemistry</a>
 
-</p>
-<a href="12th.html">
-<button>
+<a href="#">Mathematics</a>
 
-Explore Course
+<a href="#">Biology</a>
 
-</button>
-</a>
 </div>
 
-
-
-<div class="course-card">
-<a href="English.html">
-<img src="english.jpeg">
-</a>
-<h2>
-
-English Course
-
-</h2>
-
-<p>
-
-Grammar
-
-Writing
-
-Literature
-
-</p>
-<a href="12thenglish.html">
-<button>
-
-Explore Course
-
-</button>
-</a>
 </div>
 
+<!-- Right Side -->
 
-<div class="course-card">
-<a href="quiz.html">
-<img src="quiz.jpeg">
-</a>
-<h2>
+<div class="right">
 
-Quiz Practice
+<div class="stat-card">
 
-</h2>
+<i class="fa-solid fa-book"></i>
 
-<p>
+<div>
 
-Daily MCQ
+<h2>1000+</h2>
 
-Weekly Test
+<p>Notes</p>
 
-Mock Test
+</div>
 
-</p>
-<a href="quiz.html">
-<button>
+</div>
 
-Start Quiz
+<div class="stat-card">
 
-</button>
-</a>
+<i class="fa-solid fa-graduation-cap"></i>
+
+<div>
+
+<h2>8</h2>
+
+<p>Subjects</p>
+
+</div>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-users"></i>
+
+<div>
+
+<h2>5000+</h2>
+
+<p>Students</p>
+
+</div>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-award"></i>
+
+<div>
+
+<h2>100%</h2>
+
+<p>Free Resources</p>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
 
+<!-- Part 2 starts below -->
+<!-- ================= SUBJECT CATEGORIES ================= -->
 
+<section class="subjects">
 
-<!-- ================= ACHIEVEMENTS ================= -->
+<div class="section-title">
 
-<section class="achievement">
+<h2>Explore Subjects</h2>
 
-<div class="counter">
-
-<h1>
-
-5000+
-
-</h1>
-
-<p>
-
- Students
-
-</p>
+<p>Select your favourite subject and start learning.</p>
 
 </div>
 
+<div class="subject-grid">
 
-<div class="counter">
+<!-- Physics -->
 
-<h1>
+<div class="subject-card physics">
 
-1200+
+<div class="icon">
 
-</h1>
-
-<p>
-
-Study Notes
-
-</p>
+<i class="fa-solid fa-atom"></i>
 
 </div>
 
+<h3>Physics</h3>
 
-<div class="counter">
+<p>Mechanics, Waves, Modern Physics & More</p>
 
-<h1>
-
-350+
-
-</h1>
-
-<p>
-
-Video Lectures
-
-</p>
+<a href="physics.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
 
 </div>
 
+<!-- Chemistry -->
 
-<div class="counter">
+<div class="subject-card chemistry">
 
-<h1>
+<div class="icon">
 
-99%
+<i class="fa-solid fa-flask"></i>
 
-</h1>
+</div>
 
-<p>
+<h3>Chemistry</h3>
 
-Success Rate
+<p>Organic, Inorganic & Physical Chemistry</p>
 
-</p>
+<a href="chemistry.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+</div>
+
+<!-- Mathematics -->
+
+<div class="subject-card maths">
+
+<div class="icon">
+
+<i class="fa-solid fa-square-root-variable"></i>
+
+</div>
+
+<h3>Mathematics</h3>
+
+<p>Algebra, Calculus, Geometry & Trigonometry</p>
+
+<a href="maths.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+</div>
+
+<!-- Biology -->
+
+<div class="subject-card biology">
+
+<div class="icon">
+
+<i class="fa-solid fa-dna"></i>
+
+</div>
+
+<h3>Biology</h3>
+
+<p>Botany, Zoology, Genetics & Ecology</p>
+
+<a href="biology.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+</div>
+
+<!-- Computer Science -->
+
+<div class="subject-card computer">
+
+<div class="icon">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+</div>
+
+<h3>Computer Science</h3>
+
+<p>Programming, HTML, CSS & JavaScript</p>
+
+<a href="computer.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+</div>
+
+<!-- English -->
+
+<div class="subject-card english">
+
+<div class="icon">
+
+<i class="fa-solid fa-book-open"></i>
+
+</div>
+
+<h3>English</h3>
+
+<p>Grammar, Writing Skills & Literature</p>
+
+<a href="english.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+</div>
+
+<!-- Previous Year Questions -->
+
+<div class="subject-card pyq">
+
+<div class="icon">
+
+<i class="fa-solid fa-file-lines"></i>
+
+</div>
+
+<h3>Previous Year Questions</h3>
+
+<p>JEE, NEET & Board Exam PYQs</p>
+
+<a href="pyq.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+</div>
+
+<!-- Formula Sheet -->
+
+<div class="subject-card formula">
+
+<div class="icon">
+
+<i class="fa-solid fa-calculator"></i>
+
+</div>
+
+<h3>Formula Sheets</h3>
+
+<p>Quick Revision Formula Collection</p>
+
+<a href="formula.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+</div>
 
 </div>
 
 </section>
-<script>function toggleMenu() {
-    let menu = document.getElementById("sideMenu");
+<!-- ================= CLASS 11 PHYSICS ================= -->
 
-    if(menu.style.right === "0px"){
-        menu.style.right = "-260px";
-    } else {
-        menu.style.right = "0px";
-    }
-}
+<section class="notes-section">
 
-function Logout() {
-    alert("Are you sure? logout")
-    localStorage.clear();
-    sessionStorage.clear();
+<div class="notes-heading">
 
-    if (window.google && google.accounts.id) {
-        google.accounts.id.disableAutoSelect();
-    }
+<div>
 
-    window.location.href = "index.html";
-}
-</script>
+<h2>📘 Class 11 Physics</h2>
+
+<p>15 Chapters • Short Notes</p>
+
+</div>
+
+<a href="class11physics.html" class="view-all">
+
+View All
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+<div class="slider-container">
+
+<button class="slide-btn left"
+onclick="scrollLeft('physics11')">
+
+<i class="fa-solid fa-chevron-left"></i>
+
+</button>
+
+<div class="notes-slider" id="physics11">
+
+<!-- Card 1 -->
+
+<div class="note-card">
+
+<div class="chapter-no">
+
+01
+
+</div>
+
+<h3>Motion in a Straight Line</h3>
+
+<p>Class 11 • Physics</p>
+
+<a href="motion-in-straight-line.html">
+
+View
+
+</a>
+
+</div>
+
+<!-- Card 2 -->
+
+<div class="note-card">
+
+<div class="chapter-no">
+
+02
+
+</div>
+
+<h3>Units & Measurements</h3>
+
+<p>Class 11 • Physics</p>
+
+<a href="units.html">
+
+View
+
+</a>
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="note-card">
+
+<div class="chapter-no">
+
+03
+
+</div>
+
+<h3>Motion in a Plane</h3>
+
+<p>Class 11 • Physics</p>
+
+<a href="motion-plane.html">
+
+View
+
+</a>
+
+</div>
+
+<!-- Card 4 -->
+
+<div class="note-card">
+
+<div class="chapter-no">
+
+04
+
+</div>
+
+<h3>Laws of Motion</h3>
+
+<p>Class 11 • Physics</p>
+
+<a href="laws.html">
+
+View
+
+</a>
+
+</div>
+
+<!-- Card 5 -->
+
+<div class="note-card">
+
+<div class="chapter-no">
+
+05
+
+</div>
+
+<h3>Work Energy & Power</h3>
+
+<p>Class 11 • Physics</p>
+
+<a href="wep.html">
+
+View
+
+</a>
+
+</div>
+
+<!-- Card 6 -->
+
+<div class="note-card">
+
+<div class="chapter-no">
+
+06
+
+</div>
+
+<h3>Gravitation</h3>
+
+<p>Class 11 • Physics</p>
+
+<a href="gravitation.html">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+<button class="slide-btn right"
+onclick="scrollRight('physics11')">
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</button>
+
+</div>
+
+</section>
+<!-- ================= CLASS 11 CHEMISTRY ================= -->
+
+<section class="notes-section">
+
+<div class="notes-heading">
+
+<div>
+<h2>🧪 Class 11 Chemistry</h2>
+<p>14 Chapters • Short Notes</p>
+</div>
+
+<a href="class11chemistry.html" class="view-all">
+View All
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+<div class="slider-container">
+
+<button class="slide-btn left"
+onclick="scrollLeft('chem11')">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<div class="notes-slider" id="chem11">
+
+<div class="note-card">
+<div class="chapter-no">01</div>
+<h3>Some Basic Concepts</h3>
+<p>Class 11 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">02</div>
+<h3>Structure of Atom</h3>
+<p>Class 11 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">03</div>
+<h3>Classification of Elements</h3>
+<p>Class 11 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">04</div>
+<h3>Chemical Bonding</h3>
+<p>Class 11 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">05</div>
+<h3>Thermodynamics</h3>
+<p>Class 11 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">06</div>
+<h3>Equilibrium</h3>
+<p>Class 11 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+</div>
+
+<button class="slide-btn right"
+onclick="scrollRight('chem11')">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= CLASS 11 MATHEMATICS ================= -->
+
+<section class="notes-section">
+
+<div class="notes-heading">
+
+<div>
+<h2>📐 Class 11 Mathematics</h2>
+<p>16 Chapters • Short Notes</p>
+</div>
+
+<a href="class11maths.html" class="view-all">
+View All
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+<div class="slider-container">
+
+<button class="slide-btn left"
+onclick="scrollLeft('math11')">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<div class="notes-slider" id="math11">
+
+<div class="note-card">
+<div class="chapter-no">01</div>
+<h3>Sets</h3>
+<p>Class 11 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">02</div>
+<h3>Relations & Functions</h3>
+<p>Class 11 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">03</div>
+<h3>Trigonometric Functions</h3>
+<p>Class 11 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">04</div>
+<h3>Complex Numbers</h3>
+<p>Class 11 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">05</div>
+<h3>Linear Inequalities</h3>
+<p>Class 11 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">06</div>
+<h3>Permutations & Combinations</h3>
+<p>Class 11 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+</div>
+
+<button class="slide-btn right"
+onclick="scrollRight('math11')">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- ================= CLASS 11 BIOLOGY ================= -->
+
+<section class="notes-section">
+
+<div class="notes-heading">
+
+<div>
+<h2>🧬 Class 11 Biology</h2>
+<p>22 Chapters • Short Notes</p>
+</div>
+
+<a href="class11biology.html" class="view-all">
+View All
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+<div class="slider-container">
+
+<button class="slide-btn left"
+onclick="scrollLeft('bio11')">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<div class="notes-slider" id="bio11">
+
+<div class="note-card">
+<div class="chapter-no">01</div>
+<h3>The Living World</h3>
+<p>Class 11 • Biology</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">02</div>
+<h3>Biological Classification</h3>
+<p>Class 11 • Biology</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">03</div>
+<h3>Plant Kingdom</h3>
+<p>Class 11 • Biology</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">04</div>
+<h3>Animal Kingdom</h3>
+<p>Class 11 • Biology</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">05</div>
+<h3>Morphology of Flowering Plants</h3>
+<p>Class 11 • Biology</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">06</div>
+<h3>Anatomy of Flowering Plants</h3>
+<p>Class 11 • Biology</p>
+<a href="#">View</a>
+</div>
+
+</div>
+
+<button class="slide-btn right"
+onclick="scrollRight('bio11')">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+
+</section>
+<!-- ================= CLASS 12 PHYSICS ================= -->
+
+<section class="notes-section">
+
+<div class="notes-heading">
+
+<div>
+<h2>⚡ Class 12 Physics</h2>
+<p>14 Chapters • Short Notes</p>
+</div>
+
+<a href="class12physics.html" class="view-all">
+View All <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+<div class="slider-container">
+
+<button class="slide-btn left" onclick="scrollLeft('physics12')">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<div class="notes-slider" id="physics12">
+
+<div class="note-card">
+<div class="chapter-no">01</div>
+<h3>Electric Charges & Fields</h3>
+<p>Class 12 • Physics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">02</div>
+<h3>Electrostatic Potential</h3>
+<p>Class 12 • Physics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">03</div>
+<h3>Current Electricity</h3>
+<p>Class 12 • Physics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">04</div>
+<h3>Moving Charges & Magnetism</h3>
+<p>Class 12 • Physics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">05</div>
+<h3>Electromagnetic Induction</h3>
+<p>Class 12 • Physics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">06</div>
+<h3>Ray Optics</h3>
+<p>Class 12 • Physics</p>
+<a href="#">View</a>
+</div>
+
+</div>
+
+<button class="slide-btn right" onclick="scrollRight('physics12')">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CLASS 12 CHEMISTRY ================= -->
+
+<section class="notes-section">
+
+<div class="notes-heading">
+
+<div>
+<h2>🧪 Class 12 Chemistry</h2>
+<p>16 Chapters • Short Notes</p>
+</div>
+
+<a href="class12chemistry.html" class="view-all">
+View All <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+<div class="slider-container">
+
+<button class="slide-btn left" onclick="scrollLeft('chem12')">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<div class="notes-slider" id="chem12">
+
+<div class="note-card">
+<div class="chapter-no">01</div>
+<h3>Solutions</h3>
+<p>Class 12 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">02</div>
+<h3>Electrochemistry</h3>
+<p>Class 12 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">03</div>
+<h3>Chemical Kinetics</h3>
+<p>Class 12 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">04</div>
+<h3>Haloalkanes & Haloarenes</h3>
+<p>Class 12 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">05</div>
+<h3>Alcohols, Phenols & Ethers</h3>
+<p>Class 12 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">06</div>
+<h3>Biomolecules</h3>
+<p>Class 12 • Chemistry</p>
+<a href="#">View</a>
+</div>
+
+</div>
+
+<button class="slide-btn right" onclick="scrollRight('chem12')">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CLASS 12 MATHEMATICS ================= -->
+
+<section class="notes-section">
+
+<div class="notes-heading">
+
+<div>
+<h2>📐 Class 12 Mathematics</h2>
+<p>13 Chapters • Short Notes</p>
+</div>
+
+<a href="class12maths.html" class="view-all">
+View All <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+<div class="slider-container">
+
+<button class="slide-btn left" onclick="scrollLeft('math12')">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<div class="notes-slider" id="math12">
+
+<div class="note-card">
+<div class="chapter-no">01</div>
+<h3>Matrices</h3>
+<p>Class 12 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">02</div>
+<h3>Determinants</h3>
+<p>Class 12 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">03</div>
+<h3>Continuity & Differentiability</h3>
+<p>Class 12 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">04</div>
+<h3>Application of Derivatives</h3>
+<p>Class 12 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">05</div>
+<h3>Integrals</h3>
+<p>Class 12 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">06</div>
+<h3>Vectors</h3>
+<p>Class 12 • Mathematics</p>
+<a href="#">View</a>
+</div>
+
+</div>
+
+<button class="slide-btn right" onclick="scrollRight('math12')">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CLASS 12 BIOLOGY ================= -->
+
+<section class="notes-section">
+
+<div class="notes-heading">
+
+<div>
+<h2>🧬 Class 12 Biology</h2>
+<p>13 Chapters • Short Notes</p>
+</div>
+
+<a href="class12biology.html" class="view-all">
+View All <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+<div class="slider-container">
+
+<button class="slide-btn left" onclick="scrollLeft('bio12')">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<div class="notes-slider" id="bio12">
+
+<div class="note-card">
+<div class="chapter-no">01</div>
+<h3>Reproduction in Organisms</h3>
+<p>Class 12 • Biology</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">02</div>
+<h3>Sexual Reproduction</h3>
+<p>Class 12 • Biology</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">03</div>
+<h3>Human Reproduction</h3>
+<p>Class 12 • Biology</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">04</div>
+<h3>Genetics & Evolution</h3>
+<p>Class 12 • Biology</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">05</div>
+<h3>Biotechnology</h3>
+<p>Class 12 • Biology</p>
+<a href="#">View</a>
+</div>
+
+<div class="note-card">
+<div class="chapter-no">06</div>
+<h3>Ecology</h3>
+<p>Class 12 • Biology</p>
+<a href="#">View</a>
+</div>
+
+</div>
+
+<button class="slide-btn right" onclick="scrollRight('bio12')">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+
+</section>
+<!-- ================= POPULAR NOTES ================= -->
+
+<section class="popular-notes">
+
+<div class="section-title">
+
+<h2>🔥 Popular Notes</h2>
+
+<p>Most visited notes by students</p>
+
+</div>
+
+<div class="popular-grid">
+
+<div class="popular-card">
+
+<span class="badge">Popular</span>
+
+<h3>Motion in a Straight Line</h3>
+
+<p>Physics • Class 11</p>
+
+<a href="#">Read Now</a>
+
+</div>
+
+<div class="popular-card">
+
+<span class="badge">Trending</span>
+
+<h3>Chemical Bonding</h3>
+
+<p>Chemistry • Class 11</p>
+
+<a href="#">Read Now</a>
+
+</div>
+
+<div class="popular-card">
+
+<span class="badge">Top Rated</span>
+
+<h3>Current Electricity</h3>
+
+<p>Physics • Class 12</p>
+
+<a href="#">Read Now</a>
+
+</div>
+
+<div class="popular-card">
+
+<span class="badge">New</span>
+
+<h3>Vectors</h3>
+
+<p>Mathematics • Class 12</p>
+
+<a href="#">Read Now</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+<div class="newsletter-box">
+
+<h2>Never Miss New Notes</h2>
+
+<p>
+
+Get notified whenever new notes, quizzes and PYQs are added.
+
+</p>
+
+<div class="subscribe">
+
+<input
+type="email"
+placeholder="Enter your email">
+
+<button>
+
+Subscribe
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-about">
+
+<h2>A TO Z SCIENCE CENTRE</h2>
+
+<p>
+
+Providing free chapterwise notes,
+
+quizzes, PYQs and study material
+
+for Class 11 & 12 students.
+
+</p>
+
+</div>
+
+<div class="footer-links">
+
+<h3>Quick Links</h3>
+
+<a href="#">Home</a>
+
+<a href="#">Notes</a>
+
+<a href="#">Quiz</a>
+
+<a href="#">Formula Sheets</a>
+
+<a href="#">PYQs</a>
+
+</div>
+
+<div class="footer-links">
+
+<h3>Subjects</h3>
+
+<a href="#">Physics</a>
+
+<a href="#">Chemistry</a>
+
+<a href="#">Mathematics</a>
+
+<a href="#">Biology</a>
+
+</div>
+
+<div class="footer-links">
+
+<h3>Contact</h3>
+
+<p>Email:</p>
+
+<p>support@atozsciencecentre.com</p>
+
+<p>Mon - Sat</p>
+
+<p>9:00 AM - 8:00 PM</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="copyright">
+
+<p>
+
+© 2026 A TO Z SCIENCE CENTRE.
+
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="home.js"></script>
+
 </body>
+
+</html>
+</body>
+
 </html>
