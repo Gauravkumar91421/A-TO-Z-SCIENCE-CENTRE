@@ -252,6 +252,11 @@ document.getElementById("logoutBtn").addEventListener("click", () => {
 const result = confirm("Are you sure?logout");
 
 if (result) {
+    
+    localStorage.clear();
+
+    // Session storage clear
+    sessionStorage.clear();
     // User ne OK dabaya
     console.log("Logout");
     
