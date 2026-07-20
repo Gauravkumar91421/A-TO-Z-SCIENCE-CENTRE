@@ -1,3 +1,4 @@
+require("dotenv").config();
 const nodemailer = require("nodemailer");
 const { OAuth2Client } = require("google-auth-library");
 
