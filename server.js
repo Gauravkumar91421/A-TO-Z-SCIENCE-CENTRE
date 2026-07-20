@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "gaurav91421@gmail.com",
-    pass: "xkukdlmkosupdspy"
+    pass: "jceehcwtfubzugfu"
   }
 });
 
@@ -85,17 +85,20 @@ app.post("/signup", async (req, res) => {
         });
 
         await newUser.save();
-        await transporter.sendMail({
-  from: "gaurav91421@gmail.com",
-  to: email,
-  subject: "Welcome to A TO Z Science Centre 🎉",
-  html: `
-    <h2>Welcome ${payload.name}!</h2>
-    <P>I am Gaurav kumar(founder of A TO Z SCIENCE CENTRE)<p>
-    <p>Thank you for signing in to <b>A TO Z Science Centre</b>.</p>
-    <p>Happy Learning! 🚀</p>
-  `
-});
+   try {
+  const info = await transporter.sendMail({
+    from: "gaurav91421@gmail.com",
+    to: email, // Google login me payload.email, signup me email
+    subject: "Welcome",
+    text: "Welcome to A TO Z Science Centre!"
+  });
+
+  console.log("✅ Email sent:", info.response);
+
+} catch (err) {
+  console.log("❌ Email Error:");
+  console.log(err);
+}
 
         res.json({
             success: true,
