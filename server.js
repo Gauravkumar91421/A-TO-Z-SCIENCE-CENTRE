@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "gaurav91421@gmail.com",
-    pass: "xkuk dlmk osup dspy"
+    pass: "xkukdlmkosupdspy"
   }
 });
 
@@ -87,7 +87,7 @@ app.post("/signup", async (req, res) => {
         await newUser.save();
         await transporter.sendMail({
   from: "gaurav91421@gmail.com",
-  to: payload.email,
+  to: email,
   subject: "Welcome to A TO Z Science Centre 🎉",
   html: `
     <h2>Welcome ${payload.name}!</h2>
