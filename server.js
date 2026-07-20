@@ -1,3 +1,4 @@
+const nodemailer = require("nodemailer");
 const { OAuth2Client } = require("google-auth-library");
 
 const client = new OAuth2Client("845623011305-ekj7cnk646cmi22qdnkrfhtp6bobu4p1.apps.googleusercontent.com");
@@ -7,6 +8,14 @@ const path = require("path");
 const User = require("./models/User");
 
 const app = express();
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: "gaurav91421@gmail.com",
+    pass: "xkuk dlmk osup dspy"
+  }
+});
+
 const PORT = process.env.PORT || 3000;
 
 mongoose.connect(process.env.MONGODB_URI)
@@ -76,6 +85,17 @@ app.post("/signup", async (req, res) => {
         });
 
         await newUser.save();
+        await transporter.sendMail({
+  from: "gaurav91421@gmail.com",
+  to: payload.email,
+  subject: "Welcome to A TO Z Science Centre 🎉",
+  html: `
+    <h2>Welcome ${payload.name}!</h2>
+    <P>I am Gaurav kumar(founder of A TO Z SCIENCE CENTRE)<p>
+    <p>Thank you for signing in to <b>A TO Z Science Centre</b>.</p>
+    <p>Happy Learning! 🚀</p>
+  `
+});
 
         res.json({
             success: true,
